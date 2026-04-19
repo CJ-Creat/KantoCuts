@@ -65,7 +65,6 @@ CREATE TABLE ratings (
 
 INSERT INTO barbers (barber_name, status, image) VALUES
 ('Kyle', 'Available', 'images/kyle.jpg'),
-('Brex', 'Available', 'images/brex.jpg'),
 ('Jay', 'Available', 'images/frias.jpg'),
 ('Christian', 'Available', 'images/cj.jpg'),
 ('Keith', 'Available', 'images/keith.jpg'),
