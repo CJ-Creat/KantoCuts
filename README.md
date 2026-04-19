@@ -1,4 +1,4 @@
-# Kanto Cuts Barbershop Management System
+# KantoCuts Barbershop Management System
 
 ## Group Members
 
