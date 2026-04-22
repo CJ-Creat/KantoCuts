@@ -131,15 +131,15 @@ try {
                 } elseif ($action === 'delete_barber') {
 					$barberId = $body['id'];
 					
-					// 1. Delete associated ratings first
+				
 					$db->prepare("DELETE FROM ratings WHERE queue_id IN (SELECT queue_id FROM queue WHERE barber_id = ?)")
 					   ->execute([$barberId]);
 					
-					// 2. Delete associated queue entries
+					
 					$db->prepare("DELETE FROM queue WHERE barber_id = ?")
 					   ->execute([$barberId]);
 					
-					// 3. Finally, delete the barber record
+					
 					$db->prepare('DELETE FROM barbers WHERE barber_id = ?')->execute([$barberId]);
 					
 					echo json_encode(["success" => true]);
